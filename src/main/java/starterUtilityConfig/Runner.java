@@ -1,16 +1,18 @@
 package starterUtilityConfig;
 
+import domain.Token;
+
 import java.util.List;
-import java.util.Scanner;
+import scannerUtility.Scanner;
 
 public class Runner {
     public static void run(String source) {
         Scanner scanner = new Scanner(source);
 //        List<Token> tokens = scanner.scanTokens();
-        List<String> tokens = scanner.tokens().toList();
+        List<Token> tokens = scanner.scanTokens();
 
         // For now, just print the tokens.
-        for (String token : tokens) {
+        for (Token token : tokens) {
             System.out.println(token);
         }
     }

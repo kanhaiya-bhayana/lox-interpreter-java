@@ -3,8 +3,6 @@ package starterUtilityConfig;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
-import java.util.List;
-import java.util.Scanner;
 
 public class ConsoleRunner {
     public static void runPrompt() throws IOException {
